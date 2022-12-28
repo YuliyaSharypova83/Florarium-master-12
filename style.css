@@ -29,9 +29,99 @@ ul>li {
     height: 60px;
     border: 2px solid #000000;
     border-radius: 50%;
+    position: relative;
 }
 
 .logo__img {
     width: 70%;
     height: 80%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+.logo-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 131.19%;
+    /* identical to box height, or 24px */
+
+    color: #000000;
+}
+
+.nav__link {
+    position: normal;
+    font-weight: 300px;
+    line-height: 1, 17;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact__tel {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    color: #000000;
+    text-decoration: none;
+}
+
+.cart {
+    background-color: ;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 1, 14);
+}
+
+.cart__img-wrap {
+    width: 60px;
+    height: 60px;
+    background-color: gold;
+    display: block;
+    overflow: hidden;
+}
+
+.cart__img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cart__price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.cart__price-value {}
+
+
+.cart__btn {
+    background-color: transparent;
+    border: none;
+    width: 12px;
+    height: 12px;
+    position: relative;
+
+}
+
+.cart__btn-img {
+    width: 100 px;
+    height: 100 px;
+    left: 50 px;
+    top: 50 px;
+    object-fit: contain;
+    position: absolut;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.
