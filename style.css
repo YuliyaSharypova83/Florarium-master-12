@@ -10,6 +10,20 @@ body {
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 ul {
@@ -26,12 +40,13 @@ ul>li {
 }
 
 .container {
-    max-width: 1210px;
+    max-width: 1242px;
+    padding: 0px 36px;
     margin: 0px auto;
 }
 
 .header {
-    background-color: #FFBF42;
+    background-color: #fbfaf9;
 }
 
 .header__container {
@@ -67,6 +82,7 @@ ul>li {
     border: 2px solid #000000;
     border-radius: 50%;
     position: relative;
+    flex-shrink: 0;
 }
 
 .logo__img {
@@ -168,4 +184,93 @@ ul>li {
     transform: translate(-50%, -50%);
 }
 
-.
+/* Hero start*/
+.hero {
+    height: 573px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.hero__desk,
+.hero__slider {
+    height: 100%;
+    position: relative;
+}
+
+.hero__desk {
+    flex: 0 0 100%;
+    padding-top: 150px;
+}
+
+.hero__desk::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 500px 500px 0px;
+    top: 0px;
+    z-index: -10;
+    right: 50%;
+
+}
+
+.container {}
+
+.hero__content {
+    width: 37%;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.hero__subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.btn {
+    background: #FFBF42;
+    border-radius: 50px;
+}
+
+.hero__link {
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.14);
+    display: flex;
+    width: 256px;
+    min-height: 48px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 131.19%;
+}
+
+.hero__slider {
+    flex: 0 0 50%;
+    overflow: hidden;
+    transform: translateX(-100%);
+    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 500px 0px 0px 500px;
+}
+
+.dots {}
+
+.dot {}
+
+.active {}
+
+.hero__slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
